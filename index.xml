@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kevin Wong</title>
-    <link>/index.xml</link>
+    <link>http://kevinfw.com/index.xml</link>
     <description>Recent content on Kevin Wong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Blogging with R Markdown</title>
-      <link>/post/blogging-with-r-markdown/</link>
+      <link>http://kevinfw.com/post/blogging-with-r-markdown/</link>
       <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/blogging-with-r-markdown/</guid>
+      <guid>http://kevinfw.com/post/blogging-with-r-markdown/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -56,20 +56,72 @@
     
     <item>
       <title>First Post using Hugo</title>
-      <link>/post/first-post-using-hugo/</link>
+      <link>http://kevinfw.com/post/first-post-using-hugo/</link>
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/first-post-using-hugo/</guid>
+      <guid>http://kevinfw.com/post/first-post-using-hugo/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve used many different frameworks and platforms for blogging from Blogspot to Wordpress to Ghost to Jekyll. R Markdown is awesome, but it&amp;rsquo;s never been easy to share R Markdown documents on any of those platforms. Hugo is another blogging framework, which I&amp;rsquo;ve heard great things about. It compiles very quickly and has little dependencies to worry about compared to Jekyll. I&amp;rsquo;m going to give it a try and hopefully it will play nicely with R Markdown. Looking forward to the adventure! Stay tuned.&lt;/p&gt;
 </description>
     </item>
     
     <item>
+      <title>MSPA Review and the Data Science Path</title>
+      <link>http://kevinfw.com/post/mspa-review-and-path-to-data-science/</link>
+      <pubDate>Tue, 13 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://kevinfw.com/post/mspa-review-and-path-to-data-science/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;One of the most interesting things about data science is the diversity of practitioners’ backgrounds. I’ve met people who are very science-y (Physics, Astronomy) to very technical (Computer Science, Mathematics) to very business-y (Marketing, IT). There is no definitive path to data science aside from getting a MS or PhD in Statistics or Computer Science since data science involves statistics and software development skills. It’s the most interesting field currently with lots of freedom to explore, to build, to learn, and to shape the future. It’s a very exciting time for data science applications.&lt;/p&gt;
+&lt;p&gt;Everytime I meet people and tell them that I’m a graduate student in predictive analytics at Northwestern University, a lot of people always ask me how I like the program. The short answer is that it’s a great program. You learn the necessary math (linear algebra, statistics, probability), programming languages (R, Python, SAS), and applications (data cleaning, statistical analysis, machine learning, data visualization) to be a contender for data science jobs.&lt;/p&gt;
+&lt;p&gt;Another question I get asked often is, “Is a degree necessary to get into data science?” Honestly, I don’t think I’m qualified to answer that since I’m a student and am looking for a job myself, but my personal belief is that I prefer getting a degree over certifications from MOOCs because of the structure it enforces. MOOCs and self-taught courses have too little structure and accountability in my opinion. I know lots of people want to get into the fast lane into data science, but the honest truth is it takes time, work, and thought. Something that just can’t be mastered in a two month bootcamp. Obviously, a lot of this largely depends on your background, your natural abilities, and how you put yourself out there.&lt;/p&gt;
+&lt;p&gt;But there is always a disclaimer, something I learned over the past year, that I give people and that’s having a degree in something doesn’t guarantee anything. The degree gets you half way there, the other half relies on your ability to share your work, network with others, and be persistent in improving yourself.&lt;/p&gt;
+&lt;p&gt;I’ve been a part of the MSPA program for a little over a year now and I am 75% done (9/12 courses through). I’ll go over in little detail of each category I feel is important to making that choice to pursue the degree.&lt;/p&gt;
+&lt;div id=&#34;reputation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Reputation&lt;/h3&gt;
+&lt;p&gt;Northwestern University is a top notch institution. There are lots of universities offering data science degrees, but not many with NU’s reputation of world class education. Northwestern University was actually one of the first institutions to offer a degree in analytics (online), so that says a lot about their understanding of the field. They are constantly refining the course offerings to match the skills needed for a modern data scientist.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;faculty&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Faculty&lt;/h3&gt;
+&lt;p&gt;Professors are for the most part great. They each have a wealth of experience in the field and are experts in their field. Some are better than others, but that’s just normal variation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;courses&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Courses&lt;/h3&gt;
+&lt;p&gt;This subject probably matters the most to people. In the program, you will learn math, specifically linear algebra, probability, statistics, and calculus. You will also learn theory that’s necessary for you to be an effective practitioner of analytics. So expect topics like data cleaning, statistical analysis, and machine learning.&lt;/p&gt;
+&lt;p&gt;You will learn about the popular programming languages–R, Python, SAS. But likely, you won’t master them in this program. However, you will be challenged to at least become proficient. There are usually lots of extra material to expand your abilities in whatever language is used in the course and you will learn a lot from professors and peers, who may know more programming than you do.&lt;/p&gt;
+&lt;p&gt;The courses will challenge you and teach you to be a practitioner of data science. However, don’t expect to become an expert in mathematical theory. You will understand just enough to get the job done.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;network&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Network&lt;/h3&gt;
+&lt;p&gt;I found that students in all my classes have always been very active, very friendly, and very intelligent. There is a very strong network of students/alumnis of the program on LinkedIn. Everyone is friendly and always willing to give advice. For many, the LinkedIn groups are the central hub of the MSPA program. You will find a lot of guidance and questions answered there. There is also a career center, but be prepared to take the initiative. You won’t get any help if you don’t ask for it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;value&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Value&lt;/h3&gt;
+&lt;p&gt;Lastly, the price is on the higher end. Currently, the cost of one course is just north of $4k. The total required courses to complete the degree is 12. So do the math and you get a grand total of about $48k. There are others that are more expensive like Berkeley’s master in data science which costs about $60k last time I checked. There are a few other various degree programs out there that costs less than $20k. And obviously, there are bootcamps that are even cheaper (less than $10k) with guarantees to get you a job, although I’ve met people in these bootcamps that mention it’s not as great as it sounds.&lt;/p&gt;
+&lt;p&gt;So overall, you’ll learn a lot. You will be able to do data science after this program. You will become qualified for an entry data science job. But remember, whatever your path to get there, it’s the little details that matter like having a github page that showcases your code or going to a meetup and talking to people about data science.&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Deep Learning</title>
-      <link>/project/deep-learning/</link>
+      <link>http://kevinfw.com/project/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/project/deep-learning/</guid>
+      <guid>http://kevinfw.com/project/deep-learning/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
@@ -84,29 +136,29 @@
     
     <item>
       <title>External Project</title>
-      <link>/project/example-external-project/</link>
+      <link>http://kevinfw.com/project/example-external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/project/example-external-project/</guid>
+      <guid>http://kevinfw.com/project/example-external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-identification/</link>
+      <link>http://kevinfw.com/publication/person-re-identification/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/person-re-identification/</guid>
+      <guid>http://kevinfw.com/publication/person-re-identification/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Mobile visual clothing search</title>
-      <link>/publication/clothing-search/</link>
+      <link>http://kevinfw.com/publication/clothing-search/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>/publication/clothing-search/</guid>
+      <guid>http://kevinfw.com/publication/clothing-search/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>

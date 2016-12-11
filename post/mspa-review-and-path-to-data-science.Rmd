@@ -1,0 +1,41 @@
+---
+title: "MSPA Review and the Data Science Path"
+author: "Kevin Wong"
+date: "2016-09-13"
+tags: ["MSPA"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+One of the most interesting things about data science is the diversity of practitioners' backgrounds. I've met people who are very science-y (Physics, Astronomy) to very technical (Computer Science, Mathematics) to very business-y (Marketing, IT). There is no definitive path to data science aside from getting a MS or PhD in Statistics or Computer Science since data science involves statistics and software development skills. It's the most interesting field currently with lots of freedom to explore, to build, to learn, and to shape the future. It's a very exciting time for data science applications.
+
+Everytime I meet people and tell them that I'm a graduate student in predictive analytics at Northwestern University, a lot of people always ask me how I like the program. The short answer is that it's a great program. You learn the necessary math (linear algebra, statistics, probability), programming languages (R, Python, SAS), and applications (data cleaning, statistical analysis, machine learning, data visualization) to be a contender for data science jobs.
+
+Another question I get asked often is, "Is a degree necessary to get into data science?" Honestly, I don't think I'm qualified to answer that since I'm a student and am looking for a job myself, but my personal belief is that I prefer getting a degree over certifications from MOOCs because of the structure it enforces. MOOCs and self-taught courses have too little structure and accountability in my opinion. I know lots of people want to get into the fast lane into data science, but the honest truth is it takes time, work, and thought. Something that just can't be mastered in a two month bootcamp. Obviously, a lot of this largely depends on your background, your natural abilities, and how you put yourself out there.
+
+But there is always a disclaimer, something I learned over the past year, that I give people and that's having a degree in something doesn't guarantee anything. The degree gets you half way there, the other half relies on your ability to share your work, network with others, and be persistent in improving yourself. 
+
+I've been a part of the MSPA program for a little over a year now and I am 75% done (9/12 courses through). I'll go over in little detail of each category I feel is important to making that choice to pursue the degree.
+
+### Reputation
+Northwestern University is a top notch institution. There are lots of universities offering data science degrees, but not many with NU's reputation of world class education. Northwestern University was actually one of the first institutions to offer a degree in analytics (online), so that says a lot about their understanding of the field. They are constantly refining the course offerings to match the skills needed for a modern data scientist.
+
+### Faculty
+Professors are for the most part great. They each have a wealth of experience in the field and are experts in their field. Some are better than others, but that's just normal variation. 
+
+### Courses
+This subject probably matters the most to people. In the program, you will learn math, specifically linear algebra, probability, statistics, and calculus. You will also learn theory that's necessary for you to be an effective practitioner of analytics. So expect topics like data cleaning, statistical analysis, and machine learning. 
+
+You will learn about the popular programming languages--R, Python, SAS. But likely, you won't master them in this program. However, you will be challenged to at least become proficient. There are usually lots of extra material to expand your abilities in whatever language is used in the course and you will learn a lot from professors and peers, who may know more programming than you do.
+
+The courses will challenge you and teach you to be a practitioner of data science. However, don't expect to become an expert in mathematical theory. You will understand just enough to get the job done.
+
+### Network
+I found that students in all my classes have always been very active, very friendly, and very intelligent. There is a very strong network of students/alumnis of the program on LinkedIn. Everyone is friendly and always willing to give advice. For many, the LinkedIn groups are the central hub of the MSPA program. You will find a lot of guidance and questions answered there. There is also a career center, but be prepared to take the initiative. You won't get any help if you don't ask for it.
+
+### Value
+Lastly, the price is on the higher end. Currently, the cost of one course is just north of \$4k. The total required courses to complete the degree is 12. So do the math and you get a grand total of about \$48k. There are others that are more expensive like Berkeley's master in data science which costs about \$60k last time I checked. There are a few other various degree programs out there that costs less than \$20k. And obviously, there are bootcamps that are even cheaper (less than \$10k) with guarantees to get you a job, although I've met people in these bootcamps that mention it's not as great as it sounds.
+
+So overall, you'll learn a lot. You will be able to do data science after this program. You will become qualified for an entry data science job. But remember, whatever your path to get there, it's the little details that matter like having a github page that showcases your code or going to a meetup and talking to people about data science.
