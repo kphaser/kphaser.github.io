@@ -293,7 +293,9 @@ head(coaches)</code></pre>
 library(ggplot2)
 coaches %&gt;% select(team) %&gt;% ggplot(aes(team), fill=team) + geom_bar() + coord_flip()</code></pre>
 <p><img src="figures/ggplot-1.png" width="672" /></p>
-<p>So it looks like the Atlanta Hawks and the Chicago Bulls have had some pretty coaches throughout NBA history. Much more analysis can be done with this dataset like which coach has the most wins all-time. Or we can try to make interesting connections like do years of experience correlate with more wins? But I’ll leave that to you to find out!</p>
+<p>So it looks like the Atlanta Hawks and the Chicago Bulls have had some pretty coaches throughout NBA history. There’s much more analysis that can be done with this dataset. We can ask questions like which coach has the most wins all-time? Or we can try to make interesting connections like, do years of experience correlate with more wins? But I’ll leave that to you to find out!</p>
+<p>It’s a good idea to save your data frame to use later:</p>
+<pre class="r"><code>write.csv(coaches, &#39;coaches.csv&#39;, row.names=FALSE)</code></pre>
 <p>There are other considerations when it comes to scraping and parsing web data like missing values. We can take a look at more of the data and notice some NA values:</p>
 <pre class="r"><code>head(coaches, 20)</code></pre>
 <pre><code>##    year            coach                   team season_wins season_losses
