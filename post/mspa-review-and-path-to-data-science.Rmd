@@ -2,7 +2,7 @@
 title: "MSPA Review and the Data Science Path"
 author: "Kevin Wong"
 date: "2016-09-13"
-tags: ["MSPA"]
+tags: ["MSPA","Data Science"]
 ---
 
 ```{r setup, include=FALSE}

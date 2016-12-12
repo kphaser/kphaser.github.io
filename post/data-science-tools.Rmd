@@ -17,7 +17,7 @@ Below is a list of tools that I prefer when working with a particular language o
 
 ### R
 - RStudio: quintessential IDE for working in R. I use this everyday.
-- Jupyter Notebooks: I tend to use this when I'm working in R on a server.
+- Jupyter Notebooks: I tend to use this when I'm working in R on a server. This is also great for Python.
 
 ### Python
 - Anaconda: great Python distribution installer that comes with all the tools like Jupyter Notebooks and data science libraries.
@@ -30,12 +30,16 @@ Below is a list of tools that I prefer when working with a particular language o
 ### Unix
 - Cmder / Putty: for ssh'ing to servers using Windows because the Windows Command Prompt is just bad.
 - Vim: There's a whole debate about Vim vs. Emacs. I prefer Vim for quick text editing. Emacs is an ecosystem in it of itself.
--Git: not much to say here. It's necessary to have good understanding of version control when working with code.
+- Git: not much to say here. It's necessary to have good understanding of version control when working with code.
 
 ### Notes
-- Microsoft OneNote: awesome for taking notes and creating pages. Similar to Evernote. You can also paste graphics in it. Widely available in most OS now.
+- Microsoft OneNote: awesome for taking notes and creating pages. Similar to Evernote, you can also paste graphics in it. Widely available in most OS now.
 
 ### Data Viz
 - ggplot2: my go to because the graphics are just beautiful.
 
-That's a short list of the tools I use. If you feel like there are better ones definitely let me know!
+### Other
+- ProjectTemplate: a package in `R` that creates a system of directories specific for different tasks like data munging, reporting, etc. All you have to do is run `load.project()` and it'll load all your dependencies, files, and prepared data so you can focus on your next steps of analysis/modeling. It's awesome! You can check it out [here](www.projecttemplate.net).
+
+
+That's a short list of the tools I use. If you feel like there are better ones or any questions definitely let me know!

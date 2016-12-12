@@ -26,7 +26,7 @@
 &lt;h3&gt;R&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;RStudio: quintessential IDE for working in R. I use this everyday.&lt;/li&gt;
-&lt;li&gt;Jupyter Notebooks: I tend to use this when I’m working in R on a server.&lt;/li&gt;
+&lt;li&gt;Jupyter Notebooks: I tend to use this when I’m working in R on a server. This is also great for Python.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;python&#34; class=&#34;section level3&#34;&gt;
@@ -47,13 +47,14 @@
 &lt;h3&gt;Unix&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Cmder / Putty: for ssh’ing to servers using Windows because the Windows Command Prompt is just bad.&lt;/li&gt;
-&lt;li&gt;Vim: There’s a whole debate about Vim vs. Emacs. I prefer Vim for quick text editing. Emacs is an ecosystem in it of itself. -Git: not much to say here. It’s necessary to have good understanding of version control when working with code.&lt;/li&gt;
+&lt;li&gt;Vim: There’s a whole debate about Vim vs. Emacs. I prefer Vim for quick text editing. Emacs is an ecosystem in it of itself.&lt;/li&gt;
+&lt;li&gt;Git: not much to say here. It’s necessary to have good understanding of version control when working with code.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;notes&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Notes&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Microsoft OneNote: awesome for taking notes and creating pages. Similar to Evernote. You can also paste graphics in it. Widely available in most OS now.&lt;/li&gt;
+&lt;li&gt;Microsoft OneNote: awesome for taking notes and creating pages. Similar to Evernote, you can also paste graphics in it. Widely available in most OS now.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;data-viz&#34; class=&#34;section level3&#34;&gt;
@@ -61,7 +62,13 @@
 &lt;ul&gt;
 &lt;li&gt;ggplot2: my go to because the graphics are just beautiful.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;That’s a short list of the tools I use. If you feel like there are better ones definitely let me know!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Other&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ProjectTemplate: a package in &lt;code&gt;R&lt;/code&gt; that creates a system of directories specific for different tasks like data munging, reporting, etc. All you have to do is run &lt;code&gt;load.project()&lt;/code&gt; and it’ll load all your dependencies, files, and prepared data so you can focus on your next steps of analysis/modeling. It’s awesome! You can check it out &lt;a href=&#34;www.projecttemplate.net&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s a short list of the tools I use. If you feel like there are better ones or any questions definitely let me know!&lt;/p&gt;
 &lt;/div&gt;
 
 
