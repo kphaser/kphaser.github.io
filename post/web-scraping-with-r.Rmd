@@ -2,7 +2,7 @@
 title: "Scraping NBA Stats From The Web"
 author: "Kevin Wong"
 date: "2016-06-11"
-tags: ["R"]
+tags: ["R", "NBA"]
 ---
 
 ```{r setup, include=FALSE}
@@ -72,7 +72,7 @@ library(ggplot2)
 coaches %>% select(team) %>% ggplot(aes(team), fill=team) + geom_bar() + coord_flip()
 ```
 
-So it looks like the Atlanta Hawks and the Chicago Bulls have had some pretty coaches throughout NBA history.
+So it looks like the Atlanta Hawks and the Chicago Bulls have had some pretty coaches throughout NBA history. Much more analysis can be done with this dataset like which coach has the most wins all-time. Or we can try to make interesting connections like do years of experience correlate with more wins? But I'll leave that to you to find out!
 
 There are other considerations when it comes to scraping and parsing web data like missing values. We can take a look at more of the data and notice some NA values:
 

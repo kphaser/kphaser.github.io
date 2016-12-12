@@ -18,17 +18,17 @@
   <link rel="stylesheet" href="/css/hugo-academic.css">
   
 
-  <link rel="alternate" href="http://kevinfw.com/tags/python/index.xml" type="application/rss+xml" title="Kevin Wong">
-  <link rel="feed" href="http://kevinfw.com/tags/python/index.xml" type="application/rss+xml" title="Kevin Wong">
+  <link rel="alternate" href="http://kevinfw.com/tags/nba/index.xml" type="application/rss+xml" title="Kevin Wong">
+  <link rel="feed" href="http://kevinfw.com/tags/nba/index.xml" type="application/rss+xml" title="Kevin Wong">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://kevinfw.com/tags/python/">
+  <link rel="canonical" href="http://kevinfw.com/tags/nba/">
 
   
 
-  <title>Python | Kevin Wong</title>
+  <title>Nba | Kevin Wong</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -95,11 +95,14 @@
   
   
   <div>
-    <h2><a href="http://kevinfw.com/post/data-science-tools/">Data Science Tools</a></h2>
+    <h2><a href="http://kevinfw.com/post/web-scraping-with-r/">Scraping NBA Stats From The Web</a></h2>
     <div class="article-style">
       
-      One of the most talked about things in the data science community is tooling. What is the best programming language to learn? What IDE should one use? There is no one definitive answer here, but the general answer largely depends on what you’re trying to accomplish and what features you care about and what your workflow is like.
-When I started learning data science, I was overwhelmed by how many tools were out there.
+      Web scraping using R is a fairly easy task. Let’s take a look at the Coach of the Year statistics from the ESPN.com site. First install the necessary packages. rvest allows you to extract data from a webpage. stringr allows you to manipulate strings. tidyr will load the data manipulation libraries that’ll be useful for selecting and munging data.
+install.packages(&#39;rvest&#39;)
+install.packages(&#39;stringr&#39;)
+install.packages(&#39;tidyr&#39;)
+We add an extra library here because html_nodes() function fails when not run interactively.
       
     </div>
   </div>
