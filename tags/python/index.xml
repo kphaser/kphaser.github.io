@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kevin Wong</title>
+    <link>/tags/python/index.xml</link>
+    <description>Recent content on Kevin Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Kevin Wong</copyright>
+    <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Data Science Tools</title>
+      <link>/post/data-science-tools/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/data-science-tools/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;One of the most talked about things in the data science community is tooling. What is the best programming language to learn? What IDE should one use? There is no one definitive answer here, but the general answer largely depends on what you’re trying to accomplish and what features you care about and what your workflow is like.&lt;/p&gt;
+&lt;p&gt;When I started learning data science, I was overwhelmed by how many tools were out there. Trying to learn every single one is a rather ineffective approach from personal experience. I’ve since focused on mastering one language and one tool and it has helped my understanding of data science and workflow productivity tremendously. That’s not to say you shouldn’t learn others when necessary, but my preference is to be the “master of one” than the “jack of all trades who is the master of none”. Mastering one language and one tool will make learning others so much easier in the long run. But that’s besides the point.&lt;/p&gt;
+&lt;p&gt;Below is a list of tools that I prefer when working with a particular language or working in a specific environment, but there are many more out there:&lt;/p&gt;
+&lt;div id=&#34;r&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;RStudio: quintessential IDE for working in R. I use this everyday.&lt;/li&gt;
+&lt;li&gt;Jupyter Notebooks: I tend to use this when I’m working in R on a server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;python&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Anaconda: great Python distribution installer that comes with all the tools like Jupyter Notebooks and data science libraries.&lt;/li&gt;
+&lt;li&gt;PyCharm: strong IDE for specifically working in Python. Great debugging features.&lt;/li&gt;
+&lt;li&gt;Enthought Canopy: An alternative to Anaconda.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sas&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;SAS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;SAS Studio: This is what I used in grad school so I’ve stuck with it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;unix&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Unix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Cmder / Putty: for ssh’ing to servers using Windows because the Windows Command Prompt is just bad.&lt;/li&gt;
+&lt;li&gt;Vim: There’s a whole debate about Vim vs. Emacs. I prefer Vim for quick text editing. Emacs is an ecosystem in it of itself. -Git: not much to say here. It’s necessary to have good understanding of version control when working with code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;notes&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft OneNote: awesome for taking notes and creating pages. Similar to Evernote. You can also paste graphics in it. Widely available in most OS now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data-viz&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Data Viz&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ggplot2: my go to because the graphics are just beautiful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s a short list of the tools I use. If you feel like there are better ones definitely let me know!&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kevin Wong</title>
-    <link>http://kevinfw.com/tags/mspa/index.xml</link>
+    <link>/tags/mspa/index.xml</link>
     <description>Recent content on Kevin Wong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>MSPA Review and the Data Science Path</title>
-      <link>http://kevinfw.com/post/mspa-review-and-path-to-data-science/</link>
+      <link>/post/mspa-review-and-path-to-data-science/</link>
       <pubDate>Tue, 13 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/mspa-review-and-path-to-data-science/</guid>
+      <guid>/post/mspa-review-and-path-to-data-science/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -46,6 +46,10 @@
 &lt;h3&gt;Value&lt;/h3&gt;
 &lt;p&gt;Lastly, the price is on the higher end. Currently, the cost of one course is just north of $4k. The total required courses to complete the degree is 12. So do the math and you get a grand total of about $48k. There are others that are more expensive like Berkeley’s master in data science which costs about $60k last time I checked. There are a few other various degree programs out there that costs less than $20k. And obviously, there are bootcamps that are even cheaper (less than $10k) with guarantees to get you a job, although I’ve met people in these bootcamps that mention it’s not as great as it sounds.&lt;/p&gt;
 &lt;p&gt;So overall, you’ll learn a lot. You will be able to do data science after this program. You will become qualified for an entry data science job. But remember, whatever your path to get there, it’s the little details that matter like having a github page that showcases your code or going to a meetup and talking to people about data science.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;further-suggestions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Further Suggestions&lt;/h3&gt;
+&lt;p&gt;I think the program can benefit from teaching students the proper workflow of a data scientist. I know this can be subjective, but one of the hardest things for newbies is how to get started and how to develop a systematic pipeline for gathering data, doing analyses, and building models. Also, learning how to work with big data by learning how to do that with distributed computing systems like Hadoop, Spark, etc.&lt;/p&gt;
 &lt;/div&gt;
 
 

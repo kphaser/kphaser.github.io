@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kevin Wong</title>
-    <link>http://kevinfw.com/index.xml</link>
+    <link>/index.xml</link>
     <description>Recent content on Kevin Wong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Blogging with R Markdown</title>
-      <link>http://kevinfw.com/post/blogging-with-r-markdown/</link>
+      <link>/post/blogging-with-r-markdown/</link>
       <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/blogging-with-r-markdown/</guid>
+      <guid>/post/blogging-with-r-markdown/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -56,20 +56,20 @@
     
     <item>
       <title>First Post using Hugo</title>
-      <link>http://kevinfw.com/post/first-post-using-hugo/</link>
+      <link>/post/first-post-using-hugo/</link>
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/first-post-using-hugo/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve used many different frameworks and platforms for blogging from Blogspot to Wordpress to Ghost to Jekyll. R Markdown is awesome, but it&amp;rsquo;s never been easy to share R Markdown documents on any of those platforms. Hugo is another blogging framework, which I&amp;rsquo;ve heard great things about. It compiles very quickly and has little dependencies to worry about compared to Jekyll. I&amp;rsquo;m going to give it a try and hopefully it will play nicely with R Markdown. Looking forward to the adventure! Stay tuned.&lt;/p&gt;
+      <guid>/post/first-post-using-hugo/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve used many different frameworks and platforms for blogging from Blogspot to Wordpress to Ghost to Jekyll. R Markdown is awesome, but it&amp;rsquo;s never been easy to share R Markdown documents on any of those platforms. Hugo is another blogging framework, which I&amp;rsquo;ve heard great things about. It compiles very quickly and has little dependencies to worry about compared to Jekyll. I&amp;rsquo;m going to give it a try and hopefully it will play nicely with R Markdown. Looking forward to the adventure!&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>MSPA Review and the Data Science Path</title>
-      <link>http://kevinfw.com/post/mspa-review-and-path-to-data-science/</link>
+      <link>/post/mspa-review-and-path-to-data-science/</link>
       <pubDate>Tue, 13 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/mspa-review-and-path-to-data-science/</guid>
+      <guid>/post/mspa-review-and-path-to-data-science/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -102,6 +102,194 @@
 &lt;p&gt;Lastly, the price is on the higher end. Currently, the cost of one course is just north of $4k. The total required courses to complete the degree is 12. So do the math and you get a grand total of about $48k. There are others that are more expensive like Berkeley’s master in data science which costs about $60k last time I checked. There are a few other various degree programs out there that costs less than $20k. And obviously, there are bootcamps that are even cheaper (less than $10k) with guarantees to get you a job, although I’ve met people in these bootcamps that mention it’s not as great as it sounds.&lt;/p&gt;
 &lt;p&gt;So overall, you’ll learn a lot. You will be able to do data science after this program. You will become qualified for an entry data science job. But remember, whatever your path to get there, it’s the little details that matter like having a github page that showcases your code or going to a meetup and talking to people about data science.&lt;/p&gt;
 &lt;/div&gt;
+&lt;div id=&#34;further-suggestions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Further Suggestions&lt;/h3&gt;
+&lt;p&gt;I think the program can benefit from teaching students the proper workflow of a data scientist. I know this can be subjective, but one of the hardest things for newbies is how to get started and how to develop a systematic pipeline for gathering data, doing analyses, and building models. Also, learning how to work with big data by learning how to do that with distributed computing systems like Hadoop, Spark, etc.&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scraping NBA Stats From The Web</title>
+      <link>/post/web-scraping-with-r/</link>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/web-scraping-with-r/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;Web scraping using R is a fairly easy task. Let’s take a look at the Coach of the Year statistics from the ESPN.com site. First install the necessary packages. &lt;code&gt;rvest&lt;/code&gt; allows you to extract data from a webpage. &lt;code&gt;stringr&lt;/code&gt; allows you to manipulate strings. &lt;code&gt;tidyr&lt;/code&gt; will load the data manipulation libraries that’ll be useful for selecting and munging data.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;#39;rvest&amp;#39;)
+install.packages(&amp;#39;stringr&amp;#39;)
+install.packages(&amp;#39;tidyr&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We add an extra library here because &lt;code&gt;html_nodes()&lt;/code&gt; function fails when not run interactively. Load the following libraries:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(rvest)
+library(stringr)
+library(tidyr)
+library(methods)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Read the wepage in:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;url &amp;lt;- &amp;#39;http://www.espn.com/nba/history/awards/_/id/34&amp;#39;
+site &amp;lt;- read_html(url)
+coach_table &amp;lt;- html_nodes(site, &amp;#39;table&amp;#39;)
+coaches &amp;lt;- html_table(coach_table,fill=TRUE)[[1]]
+head(coaches)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                  X1                X2                    X3
+## 1 Coach of the Year Coach of the Year     Coach of the Year
+## 2              YEAR             COACH                  TEAM
+## 3              2016        Steve Kerr Golden State Warriors
+## 4              2015  Mike Budenholzer         Atlanta Hawks
+## 5              2014    Gregg Popovich     San Antonio Spurs
+## 6              2013       George Karl        Denver Nuggets
+##                  X4                X5                X6                X7
+## 1 Coach of the Year Coach of the Year Coach of the Year Coach of the Year
+## 2               W-L      PLAYOFFS W-L        CAREER W-L               EXP
+## 3              73-9              15-9            161-28           2 years
+## 4             60-22               8-8           158-112           3 years
+## 5             62-20              16-7          1108-490          20 years
+## 6             57-25               2-4          1175-824          27 years
+##                  X8                X9               X10
+## 1 Coach of the Year Coach of the Year Coach of the Year
+## 2              &amp;lt;NA&amp;gt;              &amp;lt;NA&amp;gt;              &amp;lt;NA&amp;gt;
+## 3              &amp;lt;NA&amp;gt;              &amp;lt;NA&amp;gt;              &amp;lt;NA&amp;gt;
+## 4              &amp;lt;NA&amp;gt;              &amp;lt;NA&amp;gt;              &amp;lt;NA&amp;gt;
+## 5              &amp;lt;NA&amp;gt;              &amp;lt;NA&amp;gt;              &amp;lt;NA&amp;gt;
+## 6              &amp;lt;NA&amp;gt;              &amp;lt;NA&amp;gt;              &amp;lt;NA&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are extra rows and columns we don’t need so we’ll remove them and give names to the remaining columns:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coaches &amp;lt;- coaches[-(1:2), -(8:10)]
+names(coaches) &amp;lt;- c(&amp;quot;year&amp;quot;, &amp;quot;coach&amp;quot;, &amp;quot;team&amp;quot;, &amp;quot;season_record&amp;quot;,&amp;quot;playoff_record&amp;quot;,&amp;quot;career_record&amp;quot;,&amp;quot;experience&amp;quot;)
+coaches$year &amp;lt;- as.integer(coaches$year)
+head(coaches)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   year            coach                  team season_record playoff_record
+## 3 2016       Steve Kerr Golden State Warriors          73-9           15-9
+## 4 2015 Mike Budenholzer         Atlanta Hawks         60-22            8-8
+## 5 2014   Gregg Popovich     San Antonio Spurs         62-20           16-7
+## 6 2013      George Karl        Denver Nuggets         57-25            2-4
+## 7 2012   Gregg Popovich     San Antonio Spurs         50-16           10-4
+## 8 2011    Tom Thibodeau         Chicago Bulls         62-20            9-7
+##   career_record experience
+## 3        161-28    2 years
+## 4       158-112    3 years
+## 5      1108-490   20 years
+## 6      1175-824   27 years
+## 7      1108-490   20 years
+## 8       261-157    2 years&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We’ll want to split up some columns and convert them to integers. Those are the &lt;code&gt;season_record&lt;/code&gt;, &lt;code&gt;playoff_record&lt;/code&gt;, and &lt;code&gt;career_record&lt;/code&gt; columns:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coaches &amp;lt;- separate(coaches, season_record, c(&amp;#39;season_wins&amp;#39;, &amp;#39;season_losses&amp;#39;), sep=&amp;#39;-&amp;#39;, remove=TRUE, convert=TRUE)
+head(coaches)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   year            coach                  team season_wins season_losses
+## 3 2016       Steve Kerr Golden State Warriors          73             9
+## 4 2015 Mike Budenholzer         Atlanta Hawks          60            22
+## 5 2014   Gregg Popovich     San Antonio Spurs          62            20
+## 6 2013      George Karl        Denver Nuggets          57            25
+## 7 2012   Gregg Popovich     San Antonio Spurs          50            16
+## 8 2011    Tom Thibodeau         Chicago Bulls          62            20
+##   playoff_record career_record experience
+## 3           15-9        161-28    2 years
+## 4            8-8       158-112    3 years
+## 5           16-7      1108-490   20 years
+## 6            2-4      1175-824   27 years
+## 7           10-4      1108-490   20 years
+## 8            9-7       261-157    2 years&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s do the same for &lt;code&gt;playoff_record&lt;/code&gt; and &lt;code&gt;career_record&lt;/code&gt; variables:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coaches &amp;lt;- separate(coaches, playoff_record, c(&amp;#39;playoff_wins&amp;#39;, &amp;#39;playoff_losses&amp;#39;), sep=&amp;#39;-&amp;#39;, remove=TRUE, convert=TRUE)
+coaches &amp;lt;- separate(coaches, career_record, c(&amp;#39;career_wins&amp;#39;, &amp;#39;career_losses&amp;#39;), sep=&amp;#39;-&amp;#39;, remove=TRUE, convert=TRUE)
+head(coaches)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   year            coach                  team season_wins season_losses
+## 3 2016       Steve Kerr Golden State Warriors          73             9
+## 4 2015 Mike Budenholzer         Atlanta Hawks          60            22
+## 5 2014   Gregg Popovich     San Antonio Spurs          62            20
+## 6 2013      George Karl        Denver Nuggets          57            25
+## 7 2012   Gregg Popovich     San Antonio Spurs          50            16
+## 8 2011    Tom Thibodeau         Chicago Bulls          62            20
+##   playoff_wins playoff_losses career_wins career_losses experience
+## 3           15              9         161            28    2 years
+## 4            8              8         158           112    3 years
+## 5           16              7        1108           490   20 years
+## 6            2              4        1175           824   27 years
+## 7           10              4        1108           490   20 years
+## 8            9              7         261           157    2 years&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, remove the character &lt;code&gt;years&lt;/code&gt; from the experience column and make it an integer. But hold on, there’s actually an easier way. We can use the &lt;code&gt;extract_numeric()&lt;/code&gt; function (update: this function has been deprecated) to get the numbers and remove the old column:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;coaches$yrs_exp &amp;lt;- as.integer(extract_numeric(coaches$experience))
+coaches$experience &amp;lt;- NULL
+head(coaches)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   year            coach                  team season_wins season_losses
+## 3 2016       Steve Kerr Golden State Warriors          73             9
+## 4 2015 Mike Budenholzer         Atlanta Hawks          60            22
+## 5 2014   Gregg Popovich     San Antonio Spurs          62            20
+## 6 2013      George Karl        Denver Nuggets          57            25
+## 7 2012   Gregg Popovich     San Antonio Spurs          50            16
+## 8 2011    Tom Thibodeau         Chicago Bulls          62            20
+##   playoff_wins playoff_losses career_wins career_losses yrs_exp
+## 3           15              9         161            28       2
+## 4            8              8         158           112       3
+## 5           16              7        1108           490      20
+## 6            2              4        1175           824      27
+## 7           10              4        1108           490      20
+## 8            9              7         261           157       2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There we have it! We have a tidy data frame in which we can do some analysis now! For example, we can figure out which team has the most Coach of the Years using the &lt;code&gt;dplyr&lt;/code&gt; and &lt;code&gt;ggplot2&lt;/code&gt; packages:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
+library(ggplot2)
+coaches %&amp;gt;% select(team) %&amp;gt;% ggplot(aes(team), fill=team) + geom_bar() + coord_flip()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;#####../content/post/web-scraping-with-r_files/figure-html/ggplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;So it looks like the Atlanta Hawks and the Chicago Bulls have had some pretty coaches throughout NBA history.&lt;/p&gt;
+&lt;p&gt;There are other considerations when it comes to scraping and parsing web data like missing values. We can take a look at more of the data and notice some NA values:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(coaches, 20)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    year            coach                   team season_wins season_losses
+## 3  2016       Steve Kerr  Golden State Warriors          73             9
+## 4  2015 Mike Budenholzer          Atlanta Hawks          60            22
+## 5  2014   Gregg Popovich      San Antonio Spurs          62            20
+## 6  2013      George Karl         Denver Nuggets          57            25
+## 7  2012   Gregg Popovich      San Antonio Spurs          50            16
+## 8  2011    Tom Thibodeau          Chicago Bulls          62            20
+## 9  2010     Scott Brooks  Oklahoma City Thunder          50            32
+## 10 2009       Mike Brown    Cleveland Cavaliers          66            16
+## 11 2008      Byron Scott    New Orleans Hornets          56            26
+## 12 2007     Sam Mitchell        Toronto Raptors          47            35
+## 13 2006    Avery Johnson       Dallas Mavericks          60            22
+## 14 2005    Mike D&amp;#39;Antoni           Phoenix Suns          62            20
+## 15 2004      Hubie Brown      Memphis Grizzlies          50            32
+## 16 2003      Hubie Brown      Memphis Grizzlies          28            41
+## 17   NA   Gregg Popovich      San Antonio Spurs          60            22
+## 18 2002    Rick Carlisle        Detroit Pistons          50            32
+## 19 2001      Larry Brown     Philadelphia 76ers          56            26
+## 20 2000       Doc Rivers          Orlando Magic          41            41
+## 21 1999    Mike Dunleavy Portland Trail Blazers          35            15
+## 22 1998       Larry Bird         Indiana Pacers          58            24
+##    playoff_wins playoff_losses career_wins career_losses yrs_exp
+## 3            15              9         161            28       2
+## 4             8              8         158           112       3
+## 5            16              7        1108           490      20
+## 6             2              4        1175           824      27
+## 7            10              4        1108           490      20
+## 8             9              7         261           157       2
+## 9             2              4         347           220       0
+## 10           10              4         347           216       0
+## 11            7              5         454           647      15
+## 12            2              4         185           243       6
+## 13           14              9         254           186       6
+## 14            9              6         472           433      12
+## 15            0              4         424           489      13
+## 16           NA             NA         424           489      13
+## 17           16              8        1108           490      20
+## 18            4              6         666           489      14
+## 19           12             11        1098           904       0
+## 20           NA             NA         770           560      17
+## 21            7              6         613           716      17
+## 22           10              6         147            67       3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Because this is a small dataset, we could infer what those missing values could be. For example, there is a missing value in &lt;code&gt;year&lt;/code&gt; of row 17, which is obvious it should be &lt;code&gt;2002&lt;/code&gt;. So we could manually impute that value.&lt;/p&gt;
+&lt;p&gt;There are NAs in the &lt;code&gt;playoff_wins&lt;/code&gt; and &lt;code&gt;playoff_losses&lt;/code&gt; columns. Those are a little trickier and one could possibly impute with more complex methods. But if you have some domain knowledge in sports, you know it’s possible for coaches to win Coach of the Year, but not make it to the playoffs hence the NA values under those columns. So it might be sensible to manually impute with &lt;code&gt;0&lt;/code&gt; or some other value. Although that’s a whole another discussion about imputation techniques and feature engineering which I’ll try to cover in another blog post. Hope that was a quick and helpful introduction to pulling data from the web in R!&lt;/p&gt;
 
 
 
@@ -118,10 +306,10 @@
     
     <item>
       <title>Deep Learning</title>
-      <link>http://kevinfw.com/project/deep-learning/</link>
+      <link>/project/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/project/deep-learning/</guid>
+      <guid>/project/deep-learning/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
@@ -136,29 +324,97 @@
     
     <item>
       <title>External Project</title>
-      <link>http://kevinfw.com/project/example-external-project/</link>
+      <link>/project/example-external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/project/example-external-project/</guid>
+      <guid>/project/example-external-project/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Data Science Tools</title>
+      <link>/post/data-science-tools/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/data-science-tools/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;One of the most talked about things in the data science community is tooling. What is the best programming language to learn? What IDE should one use? There is no one definitive answer here, but the general answer largely depends on what you’re trying to accomplish and what features you care about and what your workflow is like.&lt;/p&gt;
+&lt;p&gt;When I started learning data science, I was overwhelmed by how many tools were out there. Trying to learn every single one is a rather ineffective approach from personal experience. I’ve since focused on mastering one language and one tool and it has helped my understanding of data science and workflow productivity tremendously. That’s not to say you shouldn’t learn others when necessary, but my preference is to be the “master of one” than the “jack of all trades who is the master of none”. Mastering one language and one tool will make learning others so much easier in the long run. But that’s besides the point.&lt;/p&gt;
+&lt;p&gt;Below is a list of tools that I prefer when working with a particular language or working in a specific environment, but there are many more out there:&lt;/p&gt;
+&lt;div id=&#34;r&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;RStudio: quintessential IDE for working in R. I use this everyday.&lt;/li&gt;
+&lt;li&gt;Jupyter Notebooks: I tend to use this when I’m working in R on a server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;python&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Anaconda: great Python distribution installer that comes with all the tools like Jupyter Notebooks and data science libraries.&lt;/li&gt;
+&lt;li&gt;PyCharm: strong IDE for specifically working in Python. Great debugging features.&lt;/li&gt;
+&lt;li&gt;Enthought Canopy: An alternative to Anaconda.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sas&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;SAS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;SAS Studio: This is what I used in grad school so I’ve stuck with it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;unix&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Unix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Cmder / Putty: for ssh’ing to servers using Windows because the Windows Command Prompt is just bad.&lt;/li&gt;
+&lt;li&gt;Vim: There’s a whole debate about Vim vs. Emacs. I prefer Vim for quick text editing. Emacs is an ecosystem in it of itself. -Git: not much to say here. It’s necessary to have good understanding of version control when working with code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;notes&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft OneNote: awesome for taking notes and creating pages. Similar to Evernote. You can also paste graphics in it. Widely available in most OS now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data-viz&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Data Viz&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ggplot2: my go to because the graphics are just beautiful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s a short list of the tools I use. If you feel like there are better ones definitely let me know!&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>http://kevinfw.com/publication/person-re-identification/</link>
+      <link>/publication/person-re-identification/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/publication/person-re-identification/</guid>
+      <guid>/publication/person-re-identification/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Mobile visual clothing search</title>
-      <link>http://kevinfw.com/publication/clothing-search/</link>
+      <link>/publication/clothing-search/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/publication/clothing-search/</guid>
+      <guid>/publication/clothing-search/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>

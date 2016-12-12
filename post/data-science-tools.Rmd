@@ -1,0 +1,41 @@
+---
+title: "Data Science Tools"
+author: "Kevin Wong"
+date: "2016-04-20"
+tags: ["R","Python","Data Science"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+One of the most talked about things in the data science community is tooling. What is the best programming language to learn? What IDE should one use? There is no one definitive answer here, but the general answer largely depends on what you're trying to accomplish and what features you care about and what your workflow is like.
+
+When I started learning data science, I was overwhelmed by how many tools were out there. Trying to learn every single one is a rather ineffective approach from personal experience. I've since focused on mastering one language and one tool and it has helped my understanding of data science and workflow productivity tremendously. That's not to say you shouldn't learn others when necessary, but my preference is to be the "master of one" than the "jack of all trades who is the master of none". Mastering one language and one tool will make learning others so much easier in the long run. But that's besides the point.
+
+Below is a list of tools that I prefer when working with a particular language or working in a specific environment, but there are many more out there:
+
+### R
+- RStudio: quintessential IDE for working in R. I use this everyday.
+- Jupyter Notebooks: I tend to use this when I'm working in R on a server.
+
+### Python
+- Anaconda: great Python distribution installer that comes with all the tools like Jupyter Notebooks and data science libraries.
+- PyCharm: strong IDE for specifically working in Python. Great debugging features.
+- Enthought Canopy: An alternative to Anaconda.
+
+### SAS
+- SAS Studio: This is what I used in grad school so I've stuck with it.
+
+### Unix
+- Cmder / Putty: for ssh'ing to servers using Windows because the Windows Command Prompt is just bad.
+- Vim: There's a whole debate about Vim vs. Emacs. I prefer Vim for quick text editing. Emacs is an ecosystem in it of itself.
+-Git: not much to say here. It's necessary to have good understanding of version control when working with code.
+
+### Notes
+- Microsoft OneNote: awesome for taking notes and creating pages. Similar to Evernote. You can also paste graphics in it. Widely available in most OS now.
+
+### Data Viz
+- ggplot2: my go to because the graphics are just beautiful.
+
+That's a short list of the tools I use. If you feel like there are better ones definitely let me know!

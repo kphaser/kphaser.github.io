@@ -1,0 +1,85 @@
+---
+title: "Scraping NBA Stats From The Web"
+author: "Kevin Wong"
+date: "2016-06-11"
+tags: ["R"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Web scraping using R is a fairly easy task. Let's take a look at the Coach of the Year statistics from the ESPN.com site. First install the necessary packages. `rvest` allows you to extract data from a webpage. `stringr` allows you to manipulate strings. `tidyr` will load the data manipulation libraries that'll be useful for selecting and munging data.
+
+```{r install, eval=FALSE}
+install.packages('rvest')
+install.packages('stringr')
+install.packages('tidyr')
+```
+
+We add an extra library here because `html_nodes()` function fails when not run interactively. Load the following libraries:
+```{r libraries, warning=FALSE, message=FALSE}
+library(rvest)
+library(stringr)
+library(tidyr)
+library(methods)
+```
+
+Read the wepage in:
+```{r website}
+url <- 'http://www.espn.com/nba/history/awards/_/id/34'
+site <- read_html(url)
+coach_table <- html_nodes(site, 'table')
+coaches <- html_table(coach_table,fill=TRUE)[[1]]
+head(coaches)
+```
+
+There are extra rows and columns we don't need so we'll remove them and give names to the remaining columns:
+```{r}
+coaches <- coaches[-(1:2), -(8:10)]
+names(coaches) <- c("year", "coach", "team", "season_record","playoff_record","career_record","experience")
+coaches$year <- as.integer(coaches$year)
+head(coaches)
+```
+
+We'll want to split up some columns and convert them to integers. Those are the `season_record`, `playoff_record`, and `career_record` columns:
+```{r}
+coaches <- separate(coaches, season_record, c('season_wins', 'season_losses'), sep='-', remove=TRUE, convert=TRUE)
+head(coaches)
+```
+
+Let's do the same for `playoff_record` and `career_record` variables:
+
+```{r, warning=FALSE}
+coaches <- separate(coaches, playoff_record, c('playoff_wins', 'playoff_losses'), sep='-', remove=TRUE, convert=TRUE)
+coaches <- separate(coaches, career_record, c('career_wins', 'career_losses'), sep='-', remove=TRUE, convert=TRUE)
+head(coaches)
+```
+
+Finally, remove the character `years` from the experience column and make it an integer. But hold on, there's actually an easier way. We can use the `extract_numeric()` function (update: this function has been deprecated) to get the numbers and remove the old column:
+
+```{r, warning=FALSE, message=FALSE}
+coaches$yrs_exp <- as.integer(extract_numeric(coaches$experience))
+coaches$experience <- NULL
+head(coaches)
+```
+
+There we have it! We have a tidy data frame in which we can do some analysis now! For example, we can figure out which team has the most Coach of the Years using the `dplyr` and `ggplot2` packages:
+
+```{r ggplot, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+coaches %>% select(team) %>% ggplot(aes(team), fill=team) + geom_bar() + coord_flip()
+```
+
+So it looks like the Atlanta Hawks and the Chicago Bulls have had some pretty coaches throughout NBA history.
+
+There are other considerations when it comes to scraping and parsing web data like missing values. We can take a look at more of the data and notice some NA values:
+
+```{r missing}
+head(coaches, 20)
+```
+
+Because this is a small dataset, we could infer what those missing values could be. For example, there is a missing value in `year` of row 17, which is obvious it should be `2002`. So we could manually impute that value. 
+
+There are NAs in the `playoff_wins` and `playoff_losses` columns. Those are a little trickier and one could possibly impute with more complex methods. But if you have some domain knowledge in sports, you know it's possible for coaches to win Coach of the Year, but not make it to the playoffs hence the NA values under those columns. So it might be sensible to manually impute with `0` or some other value. Although that's a whole another discussion about imputation techniques and feature engineering which I'll try to cover in another blog post. Hope that was a quick and helpful introduction to pulling data from the web in R!

@@ -10,35 +10,59 @@
     <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Blogging with R Markdown</title>
-      <link>/post/blogging-with-r-markdown/</link>
-      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+      <title>Data Science Tools</title>
+      <link>/post/data-science-tools/</link>
+      <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/blogging-with-r-markdown/</guid>
+      <guid>/post/data-science-tools/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
 
-&lt;p&gt;Throughout my graduate studies, I’ve used R quite a bit and have grown fond of it. When it comes to doing data science and machine learning, R fits the bill nicely. Not to mention R has a huge following and is currently one of the most popular languages in the world. As a result, it has a very active community and a huge selection of packages that pretty much allows R to do anything you want like reproducible reporting.&lt;/p&gt;
-&lt;p&gt;One of the key skills of a data scientist is to communicate and share your analyses/models with your peers or stakeholders. If you can’t effectively show what you did, then what’s the point? The guys at RStudio have created a great solution called R Markdown. If you’ve ever used Markdown, then you know how easy it is. R Markdown allows one to embed R code into a reporting document. Just start a new .Rmd file in RStudio and adjust the YAML front matter at the very top of the document and you’re good to go. R Markdown borrows the syntax from vanilla Markdown where most of the difference is in parameterizing the code chunks. R Markdown is amazing for reproducibility. Also, anyone that’s ever seen a R Markdown document knows it’s one of the prettier looking documents. R Markdown even has the capability to embed Shiny apps/interactive widgets.&lt;/p&gt;
-&lt;p&gt;However, there is one drawback to R Markdown right now and that’s blogging. In an ideal world, I would be in RStudio, writing a post in R Markdown and pushing it to github pages and be done with it. But it’s not there yet. I’ve seen many solutions from using Jekyll (which I haven’t found to be easy) to spinning up your own AWS EC2 instance and setting up a blog there to host html files. Most seem like more work than it should be just to put up a nice looking R Markdown page. After much searching around, I found &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; by Yihui Xie, the man who created Knitr. Blogdown uses &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, a blogging framework for static pages built using the &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; language. One word of warning, blogdown is still under development, but I’ve tested it out and there have been minor issues, but most of it is because there is no documentation right now if you’re stuck. I’ve had to go under the hood and look at the code to figure out what functions to run. Below I’ll show a quick way to get set up so that blogging with R Markdown is joy from start to finish.&lt;/p&gt;
-&lt;p&gt;Assuming you already have R/RStudio installed, you’ll need to download the blogdown package to your machine like so:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;#39;rstudio/blogdown&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, you’ll need to install Hugo to your local machine using the blogdown function &lt;code&gt;install_hugo()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::install_hugo()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, we can create a new directory for our webpage and make sure to set your working directory to that new directory. Once in your empty directory, run the following command:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::new_site()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If the above does not work, make sure you are creating a completely empty directory. I ran into a few issues when I tried to run the above function on a directory with a .Rproj file in it. So remember, the directory will need to be &lt;em&gt;totally empty&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;The above command will generate all the necessary skeleton files needed to generate the blog and launch it in the console. It will also show a preview of your blog in the viewer window in RStudio. The above command also automatically downloads a theme, but this can easily be changed if you choose with the below command. You can find more Hugo themes at &lt;a href=&#34;themes.gohugo.io&#34;&gt;here&lt;/a&gt;. My current theme is academic. You can change it to whatever you want by specifying the github repo and the theme name as shown below in quotes.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::install_theme(&amp;#39;gcushen/hugo-academic&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Keep in mind when you install a new theme, the config file &lt;code&gt;config.toml&lt;/code&gt; will update to use the most recently downloaded theme as default. So to change it in the future just go into the &lt;code&gt;config.toml&lt;/code&gt; file and adjust the &lt;code&gt;theme =&lt;/code&gt; parameter to the name of the theme you want.&lt;/p&gt;
-&lt;p&gt;When you’re happy with the theme, it’s good practice to preview your blog before pushing it out to the world. Run the following in your console:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::serve_site()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will generate the blog and preview it on your local machine. Blogdown loads your website on your localhost IP address. Mine shows up here: &lt;code&gt;http://127.0.0.1:4321/&lt;/code&gt;. If you’re using RStudio, you’ll be able to preview the site/post and make changes on the fly. When you make changes to the R Markdown document being previewed, blogdown will rebuild the website when you hit save and the Viewer in RStudio will automatically show the updated content. You can also use &lt;code&gt;blogdown::build_site()&lt;/code&gt; to build the site for publishing, but it will not preview it. Hugo generates the published content in the &lt;code&gt;public/&lt;/code&gt; directory of your root.&lt;/p&gt;
-&lt;p&gt;When you create a new Rmd file in RStudio, a date will automatically be propogated for you in the &lt;code&gt;&amp;quot;December 5, 2016&amp;quot;&lt;/code&gt; format in the YAML front matter. Hugo will not be able to correctly parse this date when it builds the website and will throw an error. So make sure to manually change the date to this format &lt;code&gt;&amp;quot;2016-12-06&amp;quot;&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;If you followed those basic steps then you should have the website files in the &lt;code&gt;public/&lt;/code&gt; directory and you’re good to go. I won’t show you how to put your blog posts online as everyone has their preference for blogging platform. I personally use github pages because it’s free and having version control with your blog posts is nice. Blogdown is a good complement because I don’t have to worry converting &lt;code&gt;.Rmd&lt;/code&gt; files to &lt;code&gt;.md&lt;/code&gt; files and put plot figures in separate folders; it’s all done for me.&lt;/p&gt;
-&lt;p&gt;Remember, blogdown is still under development so many people are bound to run into errors and the lack of documentation doesn’t help. To their credit, the RStudio guys are busy making our lives better. Blogdown is a great start to easy blogging in R Markdown. And I look forward to more developments coming to this package.&lt;/p&gt;
-&lt;p&gt;I hope this post helped some of you out there like me who love R Markdown and want to easily share these type of documents. Happy R Markdown blogging!&lt;/p&gt;
+&lt;p&gt;One of the most talked about things in the data science community is tooling. What is the best programming language to learn? What IDE should one use? There is no one definitive answer here, but the general answer largely depends on what you’re trying to accomplish and what features you care about and what your workflow is like.&lt;/p&gt;
+&lt;p&gt;When I started learning data science, I was overwhelmed by how many tools were out there. Trying to learn every single one is a rather ineffective approach from personal experience. I’ve since focused on mastering one language and one tool and it has helped my understanding of data science and workflow productivity tremendously. That’s not to say you shouldn’t learn others when necessary, but my preference is to be the “master of one” than the “jack of all trades who is the master of none”. Mastering one language and one tool will make learning others so much easier in the long run. But that’s besides the point.&lt;/p&gt;
+&lt;p&gt;Below is a list of tools that I prefer when working with a particular language or working in a specific environment, but there are many more out there:&lt;/p&gt;
+&lt;div id=&#34;r&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;RStudio: quintessential IDE for working in R. I use this everyday.&lt;/li&gt;
+&lt;li&gt;Jupyter Notebooks: I tend to use this when I’m working in R on a server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;python&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Anaconda: great Python distribution installer that comes with all the tools like Jupyter Notebooks and data science libraries.&lt;/li&gt;
+&lt;li&gt;PyCharm: strong IDE for specifically working in Python. Great debugging features.&lt;/li&gt;
+&lt;li&gt;Enthought Canopy: An alternative to Anaconda.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sas&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;SAS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;SAS Studio: This is what I used in grad school so I’ve stuck with it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;unix&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Unix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Cmder / Putty: for ssh’ing to servers using Windows because the Windows Command Prompt is just bad.&lt;/li&gt;
+&lt;li&gt;Vim: There’s a whole debate about Vim vs. Emacs. I prefer Vim for quick text editing. Emacs is an ecosystem in it of itself. -Git: not much to say here. It’s necessary to have good understanding of version control when working with code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;notes&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft OneNote: awesome for taking notes and creating pages. Similar to Evernote. You can also paste graphics in it. Widely available in most OS now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data-viz&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Data Viz&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ggplot2: my go to because the graphics are just beautiful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s a short list of the tools I use. If you feel like there are better ones definitely let me know!&lt;/p&gt;
+&lt;/div&gt;
 
 
 
