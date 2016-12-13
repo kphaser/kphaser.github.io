@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home-rsses on Kevin Wong</title>
-    <link>http://kevinfw.com/home/index.xml</link>
+    <link>/home/index.xml</link>
     <description>Recent content in Home-rsses on Kevin Wong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
