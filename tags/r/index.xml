@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kevin Wong</title>
-    <link>/tags/r/index.xml</link>
+    <link>http://kevinfw.com/tags/r/index.xml</link>
     <description>Recent content on Kevin Wong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Predicting Ames House Prices</title>
-      <link>/post/predicting-ames-house-prices/</link>
+      <link>http://kevinfw.com/post/predicting-ames-house-prices/</link>
       <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/predicting-ames-house-prices/</guid>
+      <guid>http://kevinfw.com/post/predicting-ames-house-prices/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -206,10 +206,10 @@ dl_perf &amp;lt;- h2o.performance(model = dl_fit2, newdata = valid_h2o)&lt;/code
     
     <item>
       <title>Blogging with R Markdown</title>
-      <link>/post/blogging-with-r-markdown/</link>
+      <link>http://kevinfw.com/post/blogging-with-r-markdown/</link>
       <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/blogging-with-r-markdown/</guid>
+      <guid>http://kevinfw.com/post/blogging-with-r-markdown/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -250,10 +250,10 @@ dl_perf &amp;lt;- h2o.performance(model = dl_fit2, newdata = valid_h2o)&lt;/code
     
     <item>
       <title>Scraping NBA Stats From The Web</title>
-      <link>/post/web-scraping-with-r/</link>
+      <link>http://kevinfw.com/post/web-scraping-with-r/</link>
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/web-scraping-with-r/</guid>
+      <guid>http://kevinfw.com/post/web-scraping-with-r/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -436,10 +436,10 @@ coaches %&amp;gt;% select(team) %&amp;gt;% ggplot(aes(team), fill=team) + geom_b
     
     <item>
       <title>Data Science Tools</title>
-      <link>/post/data-science-tools/</link>
+      <link>http://kevinfw.com/post/data-science-tools/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/data-science-tools/</guid>
+      <guid>http://kevinfw.com/post/data-science-tools/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
