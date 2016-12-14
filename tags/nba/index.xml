@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kevin Wong</title>
-    <link>http://kevinfw.com/tags/nba/index.xml</link>
+    <link>/tags/nba/index.xml</link>
     <description>Recent content on Kevin Wong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Scraping NBA Stats From The Web</title>
-      <link>http://kevinfw.com/post/web-scraping-with-r/</link>
+      <link>/post/web-scraping-with-r/</link>
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/web-scraping-with-r/</guid>
+      <guid>/post/web-scraping-with-r/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;

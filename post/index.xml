@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post-rsses on Kevin Wong</title>
-    <link>http://kevinfw.com/post/index.xml</link>
+    <link>/post/index.xml</link>
     <description>Recent content in Post-rsses on Kevin Wong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Predicting Ames House Prices</title>
-      <link>http://kevinfw.com/post/predicting-ames-house-prices/</link>
+      <link>/post/predicting-ames-house-prices/</link>
       <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/predicting-ames-house-prices/</guid>
+      <guid>/post/predicting-ames-house-prices/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -64,20 +64,6 @@ Neural nets have recently been popularized in the media especially for their use
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Ensemble Model/Model Averaging&lt;/strong&gt;&lt;br /&gt;
 The last type of model used was the ensemble model, specifically model averaging. Several models are created that perform relaively well on the problem and the predictions are averaged. In this case, all the models above were used to create an average prediction. The reason for using this model was that the recent Kaggle winners used ensemble models. It is not surprising that most winning submissions are ensembles because one can leverage the prediction power of several different models to obtain the highest prediction accuracy.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-&lt;div id=&#34;literature&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Literature&lt;/h3&gt;
-&lt;p&gt;The following five examples refer to the type of models used in this report that have been applied to similar cases.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;LASSO&lt;/em&gt;&lt;br /&gt;
-In Taiwan, head and neck cancers are one of the leading causes of mortality. One of the common treatments is radiotherapy which often results in xerostomia which is severe dryness of the mouth. Several researchers analyzed questionnaires from 206 patients before, during and after radiotherapy. The reseachers analyzed the variables 3 and 12 months post radiotherapy. The LASSO model was used to rank and select strongly correlated prognostic factors based on the AUC. The LASSO selected eight factors 3 months after radiotherapy and nine factors 12 months after radiotherapy. The LASSO model had an AUC score of 0.86 and 0.87 for the post 3 and 12 months after radiotherapy respectively. (Lee, Chao, Ting, Chang, Huang, Wu, &amp;amp; Leung, 2014)&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Random Forest&lt;/em&gt;&lt;br /&gt;
-Flavonoids are an important research objective when it comes to wine because they affect the sensory quality of fruits and vegetables. When berries age and ripen the skin texture changes and affects the sensory quality of the grapes. Measuring flavinoids is time consuming so a group of researchers employed machine learning algorithms to try and accurately predict skin flavonoid content. They used several ensemble methods including random forest. They took texture properties and flavonoid content measured in 22 wine grapes. They were able to obtain high accuracy with &lt;span class=&#34;math inline&#34;&gt;\(R^2\)&lt;/span&gt; of 0.836 and RMSE of 0.729 on the test set. The result is a greater exposure and appreciation for machine learning in the area of chemometrics (Brillante, Gaiotti, Lovat, Vincenzi, Giacosa, Torchio, Segade, Rolle, &amp;amp; Tomasi, 2015).&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;GBM&lt;/em&gt;&lt;br /&gt;
-An interesting application of GBMs is for auto insurance loss cost prediction. GLMs are generally an accepted framework for insurance pricing models, however the exploration into GBMs, as it is a very robust method, was attractive to a group of auto insurance researchers. The performance of the GBM was compared with the GLM by calculating a ratio of the rate the insurance company would charge based on the GBM model to the rate the insurance company would charge based on the GLM model resulting in a GLM-loss ratio. It was found that the GLM loss-ratio increases when the GBM would suggest charger higher rate than GLM which indicates the GBM had higher predictive performance (Guelman, 2012).&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Neural Networks&lt;/em&gt;&lt;br /&gt;
-Neural networks have been used to solve all sorts of complex and unique problems. One of those problems is predicting energy consumption and thermal comfort level of a swimming pool. The neural network was trained and optimized in real conditions in order to achieve energy cost savings. Variables such as hour, day, month, humidity, water temperature, room temperature, and supplied flow rate were inputs into the neural network model with outputs being electricity consumption, thermal energy consumption, and thermal comfort (PMV). The results of testing error rate allowed the researchers to determine the optimal hidden layers and epochs which is similar to our use of cross-validation techniques on the neural network later in this report. The use of neural networks here allows for creation of intelligent swimming pool systems (Yuce, Li, Rezgui, Petri, Jayan, &amp;amp; Yang, 2014).&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Ensemble Model/Model Averaging&lt;/em&gt;&lt;br /&gt;
-A study of the Pacific Northwest region runoff shows that multi-model ensemble outperforms single model predictions. The ensemble model was used to predict projected seasonal runoff extremes compared to historical simulations. Several models were created and combined through the use of Bayesian model averaging and then made to predict the runoff extremes for each season. The results were compared with the observed historical simulation on a map grid. The ensemble models predicted that there would be an increase in extreme runoff in the future in most of the Pacific Northwest regions (Najafi &amp;amp; Moradkhani, 2015).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;formulation&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Formulation&lt;/h3&gt;
@@ -164,35 +150,8 @@ dl_perf &amp;lt;- h2o.performance(model = dl_fit2, newdata = valid_h2o)&lt;/code
 &lt;p&gt;Some future considerations for this problem may be to perform more feature engineering. There are likely other variables that can provide more information. The models can be further developed through more hyper-parameterization and perhaps running them in a distributed computing environment.&lt;/p&gt;
 &lt;p&gt;The goal in developing these models is to be able to better understand and to apply them to other real world datasets. I am interested into taking some of these models to more complex problems like image classification and building some interactive applications around these models. My hope is to be able to showcase this project and other future similar projects to employers/clients. This problem has also inspired me to compete in other Kaggle competitions using models developed here.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;learning&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Learning&lt;/h3&gt;
-&lt;p&gt;This project was fairly complex in terms of dealing with many explanatory variables. By no means was this big data, but higher dimension datasets can be difficult to deal with if not prepared appropriately to be fed into machine learning algorithms.&lt;/p&gt;
-&lt;p&gt;Some of the major takeaways from this project are that there are packages that help automate the modeling process like the &lt;em&gt;caret&lt;/em&gt; package. This package allows you to utilize grid search and cross validation to select optimal model parameters. This was especially helpful when fine tuning models to make better predictions.&lt;/p&gt;
-&lt;p&gt;Another nice package/engine is the &lt;em&gt;h2o&lt;/em&gt; package. It allows you to run machine learning algorithms in-memory in a distributed fashion. So for algorithms like neural networks or random forests, which can take a long time to train, would literally take a few seconds. This allows more iterations and experimentation.&lt;/p&gt;
-&lt;p&gt;Model complexity does not necessarily lead to better predictions. As mentioned earlier, simpler models like the LASSO, could produce better results than black box methods like neural networks, which did not seem to perform well in this competition.&lt;/p&gt;
-&lt;p&gt;Lastly, because the dataset contained many variables, it really challenged my skills in R in terms of manipulating data and writing functions more effectively and efficiently.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;Brillante, Luca, Federica Gaiotti, Lorenzo Lovat, Simone Vincenzi, Simone Giacosa, Fabrizio Torchio, Susana Río Segade, Luca Rolle, &amp;amp; Diego Tomasi. “Investigating the Use of Gradient Boosting Machine, Random Forest and Their Ensemble to Predict Skin Flavonoid Content from Berry Physical–mechanical Characteristics in Wine Grapes.” Computers and Electronics in Agriculture 117 (2015): 186-93. Web.&lt;/p&gt;
-&lt;p&gt;Guelman, L. (2012). Gradient boosting trees for auto insurance loss cost modeling and prediction. Expert Systems with Applications, 39(3), 3659-3667. &lt;a href=&#34;doi:10.1016/j.eswa.2011.09.058&#34; class=&#34;uri&#34;&gt;doi:10.1016/j.eswa.2011.09.058&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Lee, T.-F., Chao, P.-J., Ting, H.-M., Chang, L., Huang, Y.-J., Wu, J.-M., … Leung, S. W. (2014). Using Multivariate Regression Model with Least Absolute Shrinkage and Selection Operator (LASSO) to Predict the Incidence of Xerostomia after Intensity-Modulated Radiotherapy for Head and Neck Cancer. PLoS ONE, 9(2), e89700. &lt;a href=&#34;http://doi.org/10.1371/journal.pone.0089700&#34; class=&#34;uri&#34;&gt;http://doi.org/10.1371/journal.pone.0089700&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Najafi, M. R., &amp;amp; Moradkhani, H. (2015). Multi-model ensemble analysis of runoff extremes for climate change impact assessments. Journal of Hydrology, 525, 352-361. &lt;a href=&#34;doi:10.1016/j.jhydrol.2015.03.045&#34; class=&#34;uri&#34;&gt;doi:10.1016/j.jhydrol.2015.03.045&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Yuce, B., Li, H., Rezgui, Y., Petri, I., Jayan, B., &amp;amp; Yang, C. (2014). Utilizing artificial neural network to predict energy consumption and thermal comfort level: An indoor swimming pool case study. Energy and Buildings, 80, 45-56. &lt;a href=&#34;doi:10.1016/j.enbuild.2014.04.052&#34; class=&#34;uri&#34;&gt;doi:10.1016/j.enbuild.2014.04.052&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
 
 
-&lt;!-- dynamically load mathjax for compatibility with self-contained --&gt;
-&lt;script&gt;
-  (function () {
-    var script = document.createElement(&#34;script&#34;);
-    script.type = &#34;text/javascript&#34;;
-    script.src  = &#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;;
-    if (location.protocol !== &#34;file:&#34; &amp;&amp; /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, &#39;&#39;);
-    document.getElementsByTagName(&#34;head&#34;)[0].appendChild(script);
-  })();
-&lt;/script&gt;
 
 &lt;!-- BLOGDOWN-HEAD
 
@@ -207,10 +166,10 @@ dl_perf &amp;lt;- h2o.performance(model = dl_fit2, newdata = valid_h2o)&lt;/code
     
     <item>
       <title>Blogging with R Markdown</title>
-      <link>http://kevinfw.com/post/blogging-with-r-markdown/</link>
+      <link>/post/blogging-with-r-markdown/</link>
       <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/blogging-with-r-markdown/</guid>
+      <guid>/post/blogging-with-r-markdown/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -251,20 +210,20 @@ dl_perf &amp;lt;- h2o.performance(model = dl_fit2, newdata = valid_h2o)&lt;/code
     
     <item>
       <title>First Post using Hugo</title>
-      <link>http://kevinfw.com/post/first-post-using-hugo/</link>
+      <link>/post/first-post-using-hugo/</link>
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/first-post-using-hugo/</guid>
+      <guid>/post/first-post-using-hugo/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve used many different frameworks and platforms for blogging from Blogspot to Wordpress to Ghost to Jekyll. R Markdown is awesome, but it&amp;rsquo;s never been easy to share R Markdown documents on any of those platforms. Hugo is another blogging framework, which I&amp;rsquo;ve heard great things about. It compiles very quickly and has little dependencies to worry about compared to Jekyll. I&amp;rsquo;m going to give it a try and hopefully it will play nicely with R Markdown. Looking forward to the adventure!&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>MSPA Review and the Data Science Path</title>
-      <link>http://kevinfw.com/post/mspa-review-and-path-to-data-science/</link>
+      <link>/post/mspa-review-and-path-to-data-science/</link>
       <pubDate>Tue, 13 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/mspa-review-and-path-to-data-science/</guid>
+      <guid>/post/mspa-review-and-path-to-data-science/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -317,10 +276,10 @@ dl_perf &amp;lt;- h2o.performance(model = dl_fit2, newdata = valid_h2o)&lt;/code
     
     <item>
       <title>Scraping NBA Stats From The Web</title>
-      <link>http://kevinfw.com/post/web-scraping-with-r/</link>
+      <link>/post/web-scraping-with-r/</link>
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/web-scraping-with-r/</guid>
+      <guid>/post/web-scraping-with-r/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -503,10 +462,10 @@ coaches %&amp;gt;% select(team) %&amp;gt;% ggplot(aes(team), fill=team) + geom_b
     
     <item>
       <title>Data Science Tools</title>
-      <link>http://kevinfw.com/post/data-science-tools/</link>
+      <link>/post/data-science-tools/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kevinfw.com/post/data-science-tools/</guid>
+      <guid>/post/data-science-tools/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;

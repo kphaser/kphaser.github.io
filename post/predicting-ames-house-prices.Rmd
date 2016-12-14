@@ -196,24 +196,6 @@ Neural nets have recently been popularized in the media especially for their use
 The last type of model used was the ensemble model, specifically model averaging. Several models are created that perform relaively well on the problem and the predictions are averaged. In this case, all the models above were used to create an average prediction. The reason for using this model was that the recent Kaggle winners used ensemble models. It is not surprising that most winning submissions are ensembles because one can leverage the prediction power of several different models to obtain the highest prediction accuracy.
 
 
-### Literature
-The following five examples refer to the type of models used in this report that have been applied to similar cases.
-
-*LASSO*   
-In Taiwan, head and neck cancers are one of the leading causes of mortality. One of the common treatments is radiotherapy which often results in xerostomia which is severe dryness of the mouth. Several researchers analyzed questionnaires from 206 patients before, during and after radiotherapy. The reseachers analyzed the variables 3 and 12 months post radiotherapy. The LASSO model was used to rank and select strongly correlated prognostic factors based on the AUC. The LASSO selected eight factors 3 months after radiotherapy and nine factors 12 months after radiotherapy. The LASSO model had an AUC score of 0.86 and 0.87 for the post 3 and 12 months after radiotherapy respectively. (Lee, Chao, Ting, Chang, Huang, Wu, & Leung, 2014)
-
-*Random Forest*  
-Flavonoids are an important research objective when it comes to wine because they affect the sensory quality of fruits and vegetables. When berries age and ripen the skin texture changes and affects the sensory quality of the grapes. Measuring flavinoids is time consuming so a group of researchers employed machine learning algorithms to try and accurately predict skin flavonoid content. They used several ensemble methods including random forest. They took texture properties and flavonoid content measured in 22 wine grapes. They were able to obtain high accuracy with $R^2$ of 0.836 and RMSE of 0.729 on the test set. The result is a greater exposure and appreciation for machine learning in the area of chemometrics (Brillante, Gaiotti, Lovat, Vincenzi, Giacosa, Torchio, Segade, Rolle, & Tomasi, 2015).
-
-*GBM*  
-An interesting application of GBMs is for auto insurance loss cost prediction. GLMs are generally an accepted framework for insurance pricing models, however the exploration into GBMs, as it is a very robust method, was attractive to a group of auto insurance researchers. The performance of the GBM was compared with the GLM by calculating a ratio of the rate the insurance company would charge based on the GBM model to the rate the insurance company would charge based on the GLM model resulting in a GLM-loss ratio. It was found that the GLM loss-ratio increases when the GBM would suggest charger higher rate than GLM which indicates the GBM had higher predictive performance (Guelman, 2012).
-
-*Neural Networks*  
-Neural networks have been used to solve all sorts of complex and unique problems. One of those problems is predicting energy consumption and thermal comfort level of a swimming pool. The neural network was trained and optimized in real conditions in order to achieve energy cost savings. Variables such as hour, day, month, humidity, water temperature, room temperature, and supplied flow rate were inputs into the neural network model with outputs being electricity consumption, thermal energy consumption, and thermal comfort (PMV). The results of testing error rate allowed the researchers to determine the optimal hidden layers and epochs which is similar to our use of cross-validation techniques on the neural network later in this report. The use of neural networks here allows for creation of intelligent swimming pool systems (Yuce, Li, Rezgui, Petri, Jayan, & Yang, 2014).
-
-*Ensemble Model/Model Averaging*  
-A study of the Pacific Northwest region runoff shows that multi-model ensemble outperforms single model predictions. The ensemble model was used to predict projected seasonal runoff extremes compared to historical simulations. Several models were created and combined through the use of Bayesian model averaging and then made to predict the runoff extremes for each season. The results were compared with the observed historical simulation on a map grid. The ensemble models predicted that there would be an increase in extreme runoff in the future in most of the Pacific Northwest regions (Najafi & Moradkhani, 2015).
-
 ### Formulation
 After processing the dataset, the training was separated into training and validation sets using a 75/25 split. In this way, models were fit on the training and evaluated or tuned on validation.
 
@@ -279,26 +261,3 @@ The Random Forest, GBM, and Neural Network are fairly robust models that can wor
 Some future considerations for this problem may be to perform more feature engineering. There are likely other variables that can provide more information. The models can be further developed through more hyper-parameterization and perhaps running them in a distributed computing environment. 
 
 The goal in developing these models is to be able to better understand and to apply them to other real world datasets. I am interested into taking some of these models to more complex problems like image classification and building some interactive applications around these models. My hope is to be able to showcase this project and other future similar projects to employers/clients. This problem has also inspired me to compete in other Kaggle competitions using models developed here. 
-
-### Learning
-This project was fairly complex in terms of dealing with many explanatory variables. By no means was this big data, but higher dimension datasets can be difficult to deal with if not prepared appropriately to be fed into machine learning algorithms.
-
-Some of the major takeaways from this project are that there are packages that help automate the modeling process like the *caret* package. This package allows you to utilize grid search and cross validation to select optimal model parameters. This was especially helpful when fine tuning models to make better predictions.
-
-Another nice package/engine is the *h2o* package. It allows you to run machine learning algorithms in-memory in a distributed fashion. So for algorithms like neural networks or random forests, which can take a long time to train, would literally take a few seconds. This allows more iterations and experimentation.
-
-Model complexity does not necessarily lead to better predictions. As mentioned earlier, simpler models like the LASSO, could produce better results than black box methods like neural networks, which did not seem to perform well in this competition.
-
-Lastly, because the dataset contained many variables, it really challenged my skills in R in terms of manipulating data and writing functions more effectively and efficiently.
-
-### References
-
-Brillante, Luca, Federica Gaiotti, Lorenzo Lovat, Simone Vincenzi, Simone Giacosa, Fabrizio Torchio, Susana Río Segade, Luca Rolle, & Diego Tomasi. "Investigating the Use of Gradient Boosting Machine, Random Forest and Their Ensemble to Predict Skin Flavonoid Content from Berry Physical–mechanical Characteristics in Wine Grapes." Computers and Electronics in Agriculture 117 (2015): 186-93. Web.
-
-Guelman, L. (2012). Gradient boosting trees for auto insurance loss cost modeling and prediction. Expert Systems with Applications, 39(3), 3659-3667. doi:10.1016/j.eswa.2011.09.058
-
-Lee, T.-F., Chao, P.-J., Ting, H.-M., Chang, L., Huang, Y.-J., Wu, J.-M., … Leung, S. W. (2014). Using Multivariate Regression Model with Least Absolute Shrinkage and Selection Operator (LASSO) to Predict the Incidence of Xerostomia after Intensity-Modulated Radiotherapy for Head and Neck Cancer. PLoS ONE, 9(2), e89700. http://doi.org/10.1371/journal.pone.0089700
-
-Najafi, M. R., & Moradkhani, H. (2015). Multi-model ensemble analysis of runoff extremes for climate change impact assessments. Journal of Hydrology, 525, 352-361. doi:10.1016/j.jhydrol.2015.03.045
-
-Yuce, B., Li, H., Rezgui, Y., Petri, I., Jayan, B., & Yang, C. (2014). Utilizing artificial neural network to predict energy consumption and thermal comfort level: An indoor swimming pool case study. Energy and Buildings, 80, 45-56. doi:10.1016/j.enbuild.2014.04.052
