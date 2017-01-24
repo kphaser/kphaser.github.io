@@ -56,6 +56,6 @@ When you create a new Rmd file in RStudio, a date will automatically be propogat
 
 If you followed those basic steps then you should have the website files in the `public/` directory and you're good to go. I won't show you how to put your blog posts online as everyone has their preference for blogging platform. I personally use github pages because it's free and having version control with your blog posts is nice. Blogdown is a good complement because I don't have to worry converting `.Rmd` files to `.md` files and put plot figures in separate folders; it's all done for me.
 
-Remember, blogdown is still under development so many people are bound to run into errors and the lack of documentation doesn't help. To their credit, the RStudio guys are busy making our lives better. Blogdown is a great start to easy blogging in R Markdown. And I look forward to more developments coming to this package. 
+Remember, blogdown is still under development so many people are bound to run into errors and the lack of documentation doesn't help (edit on 1/23/2017: Looks like Yihui is cranking up development on blogdown and the documentation is improving. Exciting times!). To their credit, the RStudio guys are busy making our lives better. Blogdown is a great start to easy blogging in R Markdown. And I look forward to more developments coming to this package. 
 
 I hope this post helped some of you out there like me who love R Markdown and want to easily share these type of documents. Happy R Markdown blogging!

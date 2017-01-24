@@ -1,0 +1,37 @@
+---
+title: "Setting Up AWS Cluster for Big Data"
+author: "Kevin Wong"
+date: "2016-12-15"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Often, as the size of a dataset gets larger, the difficulty of the data science problem gets harder. When it comes to doing data analysis and machine learning, there are several approaches for depending on the size of the data:
+
+1) Small data: run analyses and models on my local machine
+2) Medium data: split up the dataset for analytics OR use distributed frameworks like `h2o` or `sparklyr` on my local machine
+3) Big data: set up an big data cluster
+
+In this blog post, I focus on big data. I've recently tried my hand at competitions on Kaggle that have substantially larger datasets that are next to impossible to run on a local machine. I'm using Amazon Web Services (AWS) here, but you could very well use other services like [Digital Ocean](digitalocean.com) or [Google Cloud](google.com/cloud). 
+
+## Step 1: Prerequisites
+### Sign up for AWS account
+Sign up at https://aws.amazon.com/
+### Create S3 bucket for storage
+S3 stands for Simple Storage Service. It serves as the primary data warehouse for many big tech companies. 
+### Create EC2 key pair
+Every server has some security in the form of an ssh key. 
+
+Step 2: Launch cluster
+
+
+
+Step 3: Prepare data
+
+
+Step 4: Process data
+
+
+Step 5: Reset environment

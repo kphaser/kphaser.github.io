@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on Kevin Wong</title>
+    <title>Posts on Kevin Wong</title>
     <link>/post/index.xml</link>
-    <description>Recent content in Post-rsses on Kevin Wong</description>
+    <description>Recent content in Posts on Kevin Wong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Kevin Wong</copyright>
@@ -192,7 +192,7 @@ dl_perf &amp;lt;- h2o.performance(model = dl_fit2, newdata = valid_h2o)&lt;/code
 &lt;p&gt;This will generate the blog and preview it on your local machine. Blogdown loads your website on your localhost IP address. Mine shows up here: &lt;code&gt;http://127.0.0.1:4321/&lt;/code&gt;. If you’re using RStudio, you’ll be able to preview the site/post and make changes on the fly. When you make changes to the R Markdown document being previewed, blogdown will rebuild the website when you hit save and the Viewer in RStudio will automatically show the updated content. You can also use &lt;code&gt;blogdown::build_site()&lt;/code&gt; to build the site for publishing, but it will not preview it. Hugo generates the published content in the &lt;code&gt;public/&lt;/code&gt; directory of your root.&lt;/p&gt;
 &lt;p&gt;When you create a new Rmd file in RStudio, a date will automatically be propogated for you in the &lt;code&gt;&amp;quot;December 5, 2016&amp;quot;&lt;/code&gt; format in the YAML front matter. Hugo will not be able to correctly parse this date when it builds the website and will throw an error. So make sure to manually change the date to this format &lt;code&gt;&amp;quot;2016-12-06&amp;quot;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;If you followed those basic steps then you should have the website files in the &lt;code&gt;public/&lt;/code&gt; directory and you’re good to go. I won’t show you how to put your blog posts online as everyone has their preference for blogging platform. I personally use github pages because it’s free and having version control with your blog posts is nice. Blogdown is a good complement because I don’t have to worry converting &lt;code&gt;.Rmd&lt;/code&gt; files to &lt;code&gt;.md&lt;/code&gt; files and put plot figures in separate folders; it’s all done for me.&lt;/p&gt;
-&lt;p&gt;Remember, blogdown is still under development so many people are bound to run into errors and the lack of documentation doesn’t help. To their credit, the RStudio guys are busy making our lives better. Blogdown is a great start to easy blogging in R Markdown. And I look forward to more developments coming to this package.&lt;/p&gt;
+&lt;p&gt;Remember, blogdown is still under development so many people are bound to run into errors and the lack of documentation doesn’t help (edit on 1/23/2017: Looks like Yihui is cranking up development on blogdown and the documentation is improving. Exciting times!). To their credit, the RStudio guys are busy making our lives better. Blogdown is a great start to easy blogging in R Markdown. And I look forward to more developments coming to this package.&lt;/p&gt;
 &lt;p&gt;I hope this post helped some of you out there like me who love R Markdown and want to easily share these type of documents. Happy R Markdown blogging!&lt;/p&gt;
 
 

@@ -1,74 +1,178 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <url>
-    <loc>/</loc>
-    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/post/predicting-ames-house-prices/</loc>
+      <lastmod>2016-12-12T00:00:00+00:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/post/predicting-ames-house-prices/</loc>
-    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/post/blogging-with-r-markdown/</loc>
+      <lastmod>2016-12-05T00:00:00+00:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/post/blogging-with-r-markdown/</loc>
-    <lastmod>2016-12-05T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/post/first-post-using-hugo/</loc>
+      <lastmod>2016-12-04T00:00:00+00:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/post/first-post-using-hugo/</loc>
-    <lastmod>2016-12-04T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/post/mspa-review-and-path-to-data-science/</loc>
+      <lastmod>2016-09-13T00:00:00+00:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/post/mspa-review-and-path-to-data-science/</loc>
-    <lastmod>2016-09-13T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/post/web-scraping-with-r/</loc>
+      <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/post/web-scraping-with-r/</loc>
-    <lastmod>2016-06-11T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/post/data-science-tools/</loc>
+      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/home/about/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/publication/person-re-identification/</loc>
+      <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/post/data-science-tools/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/publication/clothing-search/</loc>
+      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/publication/person-re-identification/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/tags/data-science/</loc>
+      <lastmod>2016-09-13T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>/publication/clothing-search/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url>
+    
+    
   
-  <url>
-    <loc>/home/posts/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/tags/hugo/</loc>
+      <lastmod>2016-12-05T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>/home/projects/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/tags/kaggle/</loc>
+      <lastmod>2016-12-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>/home/courses/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/</loc>
+      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>/home/contact/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+      <loc>/tags/machine-learning/</loc>
+      <lastmod>2016-12-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>/tags/mspa/</loc>
+      <lastmod>2016-09-13T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>/tags/nba/</loc>
+      <lastmod>2016-06-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>/post/</loc>
+      <lastmod>2016-12-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>/publication/</loc>
+      <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>/tags/python/</loc>
+      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>/tags/r/</loc>
+      <lastmod>2016-12-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
   
 </urlset>
